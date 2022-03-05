@@ -12,11 +12,9 @@ function List() {
     <aside className={style.tasksList}>
       <h2>Estudos do dia</h2>
       <ul>
-        {
-          tasksList.map((task: ITask) => (
-            <Task key={task.id} {...task} />
-          ))
-        }
+        {tasksList.map((task: ITask) => (
+          <Task key={task.id} {...task} />
+        ))}
       </ul>
     </aside>
   )
